@@ -28,6 +28,7 @@ class MyApp extends StatelessWidget {
   Future<Widget> checkIfOpenedBefore() async {
     bool openedBefore = await SharedPreferenceServiceImpl().ifOpenedBefore();
     if(openedBefore){
+
       return const HomeScreen();
     }else{
       return const OnboardingPage();
