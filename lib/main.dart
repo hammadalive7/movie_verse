@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:movie_verse/constants/strings.dart';
+import 'package:movie_verse/views/screens/home_screen/home_screen.dart';
 import 'services/shared_preferences.dart';
 import 'views/theme/theme.dart';
 
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
     if (openedBefore) {
       return const HomeScreen();
     } else {
-      return const OnboardingPage();
+      return const HomeScreen();
     }
   }
 
