@@ -43,6 +43,8 @@ dependencies:
   shimmer: ^3.0.0
   shared_preferences: ^2.2.0
   flutter_native_splash: ^2.3.1
+  cached_network_image: ^3.2.3
+  flutter_cache_manager: ^3.3.1
 
 dev_dependencies:
   flutter_test:
@@ -71,7 +73,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/
-    - assets/ca/
+#    - assets/ca/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
