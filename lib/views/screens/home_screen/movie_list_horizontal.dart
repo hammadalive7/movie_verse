@@ -8,6 +8,8 @@ import 'package:http/http.dart';
 import 'dart:convert';
 import 'package:cached_network_image/cached_network_image.dart';
 
+import '../movie_details_screen/movie_details_screen.dart';
+
 class HorizontalMoviesList extends StatelessWidget {
   final List<Movie> movies;
 
@@ -43,15 +45,15 @@ class HorizontalMoviesList extends StatelessWidget {
                     const EdgeInsets.symmetric(horizontal: 5.0, vertical: 10.0),
                 child: InkWell(
                   onTap: () {
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(
-                    //     builder: (context) =>
-                    //         MovieDetailsScreen(
-                    //           movieId: movie.id,
-                    //         ),
-                    //   ),
-                    // );
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) =>
+                            MovieDetailsScreen(
+                              movieId: movie.id,
+                            ),
+                      ),
+                    );
                   },
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -74,15 +76,15 @@ class HorizontalMoviesList extends StatelessWidget {
                             key: UniqueKey(),
                             cacheManager: customCacheManager,
                             fit: BoxFit.cover,
-                            // imageBuilder: (context, imageProvider) => Container(
-                            //   decoration: BoxDecoration(
-                            //     borderRadius: BorderRadius.circular(10.0),
-                            //     image: DecorationImage(
-                            //       image: imageProvider,
-                            //       fit: BoxFit.cover,
-                            //     ),
-                            //   ),
-                            // )
+                            imageBuilder: (context, imageProvider) => Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10.0),
+                                image: DecorationImage(
+                                  image: imageProvider,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                            )
                           ),
                         ),
                       ),

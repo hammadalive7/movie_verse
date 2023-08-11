@@ -7,6 +7,11 @@ import '../../../models/home_response_model.dart';
 import '../../../providers/home_screen_provider.dart';
 import '../../components_shared/movie_list_horizontal_shimmer_skeleton.dart';
 import '../../theme/theme.dart';
+import '../now_playing_movie_screen/now_playing_movies_screen.dart';
+import '../popular_movie_screens/genres_selection_screen.dart';
+import '../search_movies_with_keywords_screen/search_movies_with_keywords_screen.dart';
+import '../top_rated_movie_screen/top_rated_movies_screen.dart';
+import '../trending_movie_screen/trending_movies_sccreen.dart';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({
@@ -27,12 +32,12 @@ class HomeScreen extends ConsumerWidget {
     return Scaffold(
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () {
-          // Navigator.push(
-          //   context,
-          //   MaterialPageRoute(
-          //     builder: (context) => const GenreSelectionScreen(),
-          //   ),
-          // );
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const GenreSelectionScreen(),
+            ),
+          );
         },
         label: Text(
           homeScreenFAB,
@@ -83,13 +88,13 @@ class HomeScreen extends ConsumerWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(
-                    //     builder: (context) => const SearchMoviesWithKeywordsScreen(
-                    //     ),
-                    //   ),
-                    // );
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SearchMoviesWithKeywordsScreen(
+                        ),
+                      ),
+                    );
                   },
                   child: TextFormField(
                     enabled: false,
@@ -138,12 +143,12 @@ class HomeScreen extends ConsumerWidget {
                     ),
                     TextButton(
                       onPressed: () {
-                        // Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(
-                        //     builder: (context) => const TrendingMoviesScreen(),
-                        //   ),
-                        // );
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const TrendingMoviesScreen(),
+                          ),
+                        );
                       },
                       child: Text(
                         seeAll,
@@ -191,13 +196,13 @@ class HomeScreen extends ConsumerWidget {
                     ),
                     TextButton(
                       onPressed: () {
-                        // Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(
-                        //     builder: (context) =>
-                        //     const NowPlayingMoviesScreen(),
-                        //   ),
-                        // );
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) =>
+                            const NowPlayingMoviesScreen(),
+                          ),
+                        );
                       },
                       child: Text(
                         seeAll,
@@ -245,12 +250,12 @@ class HomeScreen extends ConsumerWidget {
                     ),
                     TextButton(
                       onPressed: () {
-                        // Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(
-                        //     builder: (context) => const TopRatedMoviesScreen(),
-                        //   ),
-                        // );
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const TopRatedMoviesScreen(),
+                          ),
+                        );
                       },
                       child: Text(
                         seeAll,

@@ -1,2 +1,2 @@
 
-const String placeholder = 'assets/images/hour_glass.jpg';
+const String placeholder = 'assets/images/placeholder.jpg';

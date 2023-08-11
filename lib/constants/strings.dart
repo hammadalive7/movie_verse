@@ -1,6 +1,6 @@
 const String homeScreenFAB='Explore With Genres';
 const String welcome ='Welcome to';
-const String appName='CineMate';
+const String appName='MovieVerse';
 const String trendingMovies='Trending Movies';
 const String seeAll='See All';
 const String wentWrong='Something Went Wrong';

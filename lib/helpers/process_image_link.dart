@@ -7,8 +7,7 @@ class ProcessImage {
     return 'https://image.tmdb.org/t/p/w500$link'.toString();
   }
   static String processPosterLink(link){
-    print("----------------------------------------------------------------------------------------");
-    print(link);
+
     if (link == null) {
       return 'https://png.pngtree.com/png-vector/20190816/ourlarge/pngtree-film-logo-design-template-vector-isolated-illustration-png-image_1693431.jpg';
     }
