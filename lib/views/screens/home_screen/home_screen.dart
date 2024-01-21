@@ -78,7 +78,7 @@ class HomeScreen extends ConsumerWidget {
                           .textTheme
                           .headlineSmall
                           ?.copyWith(
-                        color: Colors.red,
+                        color: Color(0xFFFD7702),
                       ),
                     ),
                   ],
@@ -120,7 +120,7 @@ class HomeScreen extends ConsumerWidget {
                         color: darkAccent,
                       ),
                       filled: true,
-                      fillColor: Colors.grey[800],
+                      fillColor: Color(0xFF012A41),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
                         borderSide: BorderSide.none,
@@ -158,7 +158,7 @@ class HomeScreen extends ConsumerWidget {
                             .textTheme
                             .titleMedium
                             ?.copyWith(
-                          color: Colors.red,
+                          color: Color(0xFFFD7702),
                         ),
                       ),
                     ),
@@ -212,7 +212,7 @@ class HomeScreen extends ConsumerWidget {
                             .textTheme
                             .titleMedium
                             ?.copyWith(
-                          color: Colors.red,
+                          color: Color(0xFFFD7702),
                         ),
                       ),
                     ),
@@ -265,7 +265,7 @@ class HomeScreen extends ConsumerWidget {
                             .textTheme
                             .titleMedium
                             ?.copyWith(
-                          color: Colors.red,
+                          color: Color(0xFFFD7702),
                         ),
                       ),
                     ),

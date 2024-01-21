@@ -99,7 +99,7 @@ ThemeData theme() {
   );
 }
 
-const int _darkPrimaryValue = 0xFF272B30;
+const int _darkPrimaryValue = 0xFF003152;
 const MaterialColor dark = MaterialColor(_darkPrimaryValue, <int, Color>{
   50: Color(0xFFE5E6E6),
   100: Color(0xFFBEBFC1),
@@ -109,16 +109,15 @@ const MaterialColor dark = MaterialColor(_darkPrimaryValue, <int, Color>{
   500: Color(_darkPrimaryValue),
   600: Color(0xFF23262B),
   700: Color(0xFF1D2024),
-  800: Color(0xFF171A1E),
-  900: Color(0xFF0E1013),
+  800: Color(0xFF013A63),
+  900: Color(0xFF012A4A),
 
 });
 
-const int _darkAccentValue = 0xFFEF233C;
+const int _darkAccentValue = 0xFFFD7702;
 const MaterialColor darkAccent = MaterialColor(_darkAccentValue, <int, Color>{
-  100: Color(0xFFEF233C),
+  100: Color(0xFFFD7702),
   200: Color(_darkAccentValue),
-  400: Color(0xFFEF233C),
-  700: Color(0xFFEF233C),
-
+  400: Color(0xFFFD7702),
+  700: Color(0xFFFD7702),
 });

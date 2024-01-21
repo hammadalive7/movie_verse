@@ -66,7 +66,7 @@ class SearchMoviesWithKeywordsScreen extends ConsumerWidget {
                     color: darkAccent,
                   ),
                   filled: true,
-                  fillColor: Colors.grey[800],
+                  fillColor: Color(0xFF012A41),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
                     borderSide: BorderSide.none,

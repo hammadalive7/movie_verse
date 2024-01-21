@@ -40,24 +40,25 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        locale: DevicePreview.locale(context),
-        builder: DevicePreview.appBuilder,
-        title: appName,
-        theme: theme(),
-        home: FutureBuilder(
-          future: checkIfOpenedBefore(),
-          builder: (context, snapshot) {
-            if (snapshot.hasData) {
-              return snapshot.data as Widget;
-            } else {
-              return const Center(
-                child: CircularProgressIndicator(
-                  color: darkAccent,
-                ),
-              );
-            }
-          },
-        ));
+      debugShowCheckedModeBanner: false,
+      locale: DevicePreview.locale(context),
+      builder: DevicePreview.appBuilder,
+      title: appName,
+      theme: theme(),
+      home: FutureBuilder(
+        future: checkIfOpenedBefore(),
+        builder: (context, snapshot) {
+          if (snapshot.hasData) {
+            return snapshot.data as Widget;
+          } else {
+            return const Center(
+              child: CircularProgressIndicator(
+                color: darkAccent,
+              ),
+            );
+          }
+        },
+      ),
+    );
   }
 }
