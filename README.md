@@ -1,16 +1,5 @@
 # movie_verse
 
-A new Flutter project.
 
-## Getting Started
+https://github.com/hammadalive7/movie_verse/assets/105983814/c7c8bae6-bb94-4609-9a25-dacf06f50360
 
-This project is a starting point for a Flutter application. 
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
